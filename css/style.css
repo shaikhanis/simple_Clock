@@ -1,5 +1,5 @@
 html {
-    background:#edc601;
+    background:#cce20dda;
     background-size:cover;
     font-family:'helvetica neue';
     text-align: center;
@@ -8,7 +8,7 @@ html {
 
   body {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.1rem;
     display:flex;
     flex:1;
     min-height: 100vh;
@@ -18,31 +18,32 @@ html {
   .clock {
     width: 30rem;
     height: 30rem;
-    border:30px solid rgb(177, 134, 134);
+    border:30px solid rgba(163, 188, 116, 0.86);
     border-radius:50%;
     margin:50px auto;
     position: relative;
     padding:2rem;
     box-shadow:
-      0 0 0 4px rgba(239, 221, 221, 0.1),
-      inset 0 0 0 3px #ac2ecb,
-      inset 0 0 10px rgb(154, 125, 125),
-      0 0 10px rgba(147, 111, 111, 0.2);
+      0 0 0 4px rgba(196, 31, 31, 0.1),
+      inset 0px 0px 0px 5px #ef73ca,
+      inset 0px 0px 0px 10px rgb(40, 83, 88),
+      0 0 10px rgba(0,0,0,0.2);
   }
 
   .clock-face {
     position: relative;
     width: 100%;
     height: 100%;
-    transform: translateY(-3px);
+    transform: translateY(-3px); 
   }
 
   .hour {
     width:50%;
-    height:10px;
-    background:rgb(132, 98, 98);
+    height:12px;
+    background:rgb(177, 240, 233);
     position: absolute;
     top:50%;
+    border-radius: 30%;
     transform-origin: 100%;
     transform: rotate(90deg);
     transition: all 0.05s;
@@ -52,7 +53,8 @@ html {
   .min {
     width:50%;
     height:8px;
-    background:rgb(132, 98, 98);
+    border-radius: 40%;
+    background:rgb(40, 83, 88);
     position: absolute;
     top:50%;
     transform-origin: 100%;
@@ -60,10 +62,12 @@ html {
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
   }
+
   .second {
     width:50%;
     height:6px;
-    background:rgb(132, 98, 98);
+    border-radius: 50%;
+    background:rgb(142, 181, 183);
     position: absolute;
     top:50%;
     transform-origin: 100%;
